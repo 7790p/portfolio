@@ -4,56 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulkit Agrawal - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-5">
         <div class="container">
-            <h1>Pulkit Agrawal</h1>
-            <p>Full Stack Developer</p>
+            <h1 class="display-4">Pulkit Agrawal</h1>
+            <p class="lead">Full Stack Developer | React, Node.js, Python</p>
             <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
+    <section id="about" class="py-5">
+        <div class="container text-center">
             <h2>About Me</h2>
-            <img src="images/about.jpg" alt="Pulkit Agrawal" class="profile-pic">
-            <p>Experienced Senior Full Stack Developer with 4 years of professional experience in both Frontend and Backend development. Proficient in HTML, CSS, JavaScript, React, Redux, Node.js, Express, and Python. Seeking to leverage hands-on technical expertise in a challenging role as a Full Stack Developer.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img src="images/about.jpg" alt="Pulkit Agrawal" class="img-fluid rounded-circle mb-3" style="width: 150px;">
+                    <p>Experienced Senior Full Stack Developer with 4 years of professional experience in both Frontend and Backend development. Proficient in HTML, CSS, JavaScript, React, Redux, Node.js, Express, and Python. Seeking to leverage hands-on technical expertise in a challenging role as a Full Stack Developer.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: JavaScript, Java, Python</li>
-                <li>Web Technologies: HTML5, CSS3, Bootstrap, JSON</li>
-                <li>Frameworks & Libraries: React.js, Redux, React Native, Angular</li>
-                <li>Tools & Platforms: Visual Studio Code, Git, Webpack, Docker, AWS</li>
-                <li>Methodologies: Agile, Waterfall</li>
-                <li>Version Control: GitHub</li>
-                <li>UI Debugging: Chrome Developer Tools, IE Developer Tools</li>
-                <li>Data Structures and Algorithms</li>
-            </ul>
+            <h2 class="text-center">Skills</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <i class="fas fa-code fa-2x mb-2"></i>
+                    <h4>Programming</h4>
+                    <p>JavaScript, Java, Python</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code fa-2x mb-2"></i>
+                    <h4>Frontend</h4>
+                    <p>HTML5, CSS3, React.js, Redux, Angular</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-server fa-2x mb-2"></i>
+                    <h4>Backend</h4>
+                    <p>Node.js, Express, REST APIs</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="py-5">
         <div class="container">
-            <h2>Work Experience</h2>
-            <div class="job">
+            <h2 class="text-center">Work Experience</h2>
+            <div class="mt-4">
                 <h3>Specialist Programmer – L2</h3>
                 <p><strong>Infosys, Pune, India</strong> | Nov 2020 – Present</p>
-                <img src="images/work.jpg" alt="Work Image" class="work-pic">
                 <h4>Client: Apple Inc | Project: UI Central Dashboards</h4>
                 <ul>
                     <li>Developed highly responsive UI components using HTML, React.js, Redux, and CSS.</li>
@@ -70,19 +82,18 @@
         </div>
     </section>
 
-    <section id="education" class="section">
-        <div class="container">
+    <section id="education" class="py-5 bg-light">
+        <div class="container text-center">
             <h2>Education</h2>
             <p><strong>Poornima College of Engineering, Jaipur</strong> | 2016 – 2020</p>
             <p>Bachelor of Technology Honors in Computer Science (72%)</p>
-            <img src="images/education.jpg" alt="Education Image" class="education-pic">
         </div>
     </section>
 
-    <section id="certifications" class="section">
+    <section id="certifications" class="py-5">
         <div class="container">
-            <h2>Certifications & Awards</h2>
-            <ul>
+            <h2 class="text-center">Certifications & Awards</h2>
+            <ul class="list-unstyled text-center mt-4">
                 <li>Infosys Certified ReactJS Developer</li>
                 <li>Infosys Certified AWS Cloud Practitioner</li>
                 <li>Rise Insta Award (4x)</li>
@@ -92,12 +103,14 @@
         </div>
     </section>
 
-    <footer id="contact" class="footer">
-        <div class="container">
+    <footer id="contact" class="py-4 bg-dark text-white">
+        <div class="container text-center">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:pulkitagrawal105@gmail.com">pulkitagrawal105@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/7790pulkit/" target="_blank">linkedin.com/in/7790pulkit</a></p>
+            <p>Email: <a href="mailto:pulkitagrawal105@gmail.com" class="text-white">pulkitagrawal105@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/7790pulkit/" target="_blank" class="text-white">linkedin.com/in/7790pulkit</a></p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
